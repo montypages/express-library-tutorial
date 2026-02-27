@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #ddd;
+  background-color: #333;
+}
+
+a {
+  color: hsl(197, 100%, 70%);
+
+  &:hover {
+    color: hsl(197, 100%, 60%);
+  }
+}
+
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
