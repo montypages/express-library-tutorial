@@ -71,8 +71,8 @@ exports.author_create_post = [
     const author = new Author({
       first_name: req.body.first_name,
       family_name: req.body.family_name,
-      date_of_birth: new Date(req.body.date_of_birth + 'T12:00:00'),
-      date_of_death: new Date(req.body.date_of_death + 'T12:00:00'),
+      date_of_birth: req.body.date_of_birth,
+      date_of_death: req.body.date_of_death,
     });
 
     if (!errors.isEmpty()) {
@@ -189,8 +189,8 @@ exports.author_update_post = [
     const author = new Author({
       first_name: req.body.first_name,
       family_name: req.body.family_name,
-      date_of_birth: new Date(req.body.date_of_birth + 'T12:00:00'),
-      date_of_death: new Date(req.body.date_of_death + 'T12:00:00'),
+      date_of_birth: req.body.date_of_birth,
+      date_of_death: req.body.date_of_death,
       _id: req.params.id,
     });
 
